@@ -1,0 +1,13 @@
+.label_trend{
+    padding-top: 50px;
+    padding-bottom: 20px;
+    background-image: url("/img/label_trend.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+}
+
+.big_padding{
+    padding-top: 100px;
+    padding-bottom: 50px;
+}
