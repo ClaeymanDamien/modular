@@ -13,9 +13,9 @@ function App() {
   return (
     <div className="crous bg-light pb-5 bg_plate">
       <Header />
-      <div className="height-100"></div>
+      
       <Zoom>
-        <div className="mt-5 pb-5 pt-5 col-lg-10 col-12 offset-lg-1">
+        <div className="mt-2 pb-5 pt-5 col-lg-10 col-12 offset-lg-1">
           <div className="col-12 bg-white p-0">
             <div className="p-4">
               <h2 className="text-center display-4">Temps d'attente aujourd'hui</h2>
@@ -24,8 +24,9 @@ function App() {
           </div>
         </div>
       </Zoom>
-      <Zoom>
-        <div className="col-lg-10 col-12 offset-lg-1 d-flex justify-content-between mt-5 flex-column flex-md-row">
+
+      <div className="col-lg-10 col-12 offset-lg-1 d-flex justify-content-between mt-5 flex-column flex-md-row">
+        <Zoom>
           <div className="col-lg bg-white p-5 m-0 d-flex flex-column justify-content-center align-items-center">
             <div className="pt-5 pt-lg-0">
               <h2 className="display-4 text-center">Temps d'attente actuel</h2>
@@ -45,8 +46,12 @@ function App() {
               />
             </div>
           </div>
-          <div className="col-1 mb-5">
-          </div>
+        </Zoom>
+        
+        <div className="col-1 mb-5">
+        </div>
+        
+        <Zoom>
           <div className="col-lg bg-white p-lg-5 p-3 m-0 d-flex flex-column justify-content-center align-items-center">
             <div className="pt-5 pt-lg-0">
               <h2 className="display-4 text-center">Heure conseillé</h2>
@@ -62,8 +67,8 @@ function App() {
                 </div>
             </div>
           </div>
+          </Zoom>
         </div>
-      </Zoom>
       <div className="big_pb"></div>
     </div>
     
