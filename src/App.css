@@ -32,7 +32,7 @@
 }
 @media (min-width: 1024px) {
   .bg_plate{
-    background-image: url("/img/food.png");
+    background-image: url("./img/food.png");
     background-position: right 0px top 0px;
     background-repeat: no-repeat;
   }

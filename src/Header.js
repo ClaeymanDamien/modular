@@ -1,6 +1,8 @@
 import React from 'react'
 import './Header.css'
 import Navbar from 'react-bootstrap/Navbar'
+import Logo from './img/logo.png'
+
 
 
 const Header = () => (
@@ -8,7 +10,7 @@ const Header = () => (
             <Navbar.Brand href="" className="d-flex">
                 <img
                     alt=""
-                    src="/img/logo.png"
+                    src={Logo}
                     width="100"
                     height="100"
                     className="d-inline-block align-center mr-5"
