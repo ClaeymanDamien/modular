@@ -2,18 +2,20 @@ import React from 'react'
 import Trend from 'react-trend'
 import './Trend.css'
 
-const MainTrend = () => (
-    <div className="label_trend bg-white">
+const MainTrend = ({data}) => (
+    <div className="bg-white padding_trend">
         <Trend
+            className="label_trend pb-1 pd-md-2 pb-lg-3"
             smooth
             autoDraw
             autoDrawDuration={2500}
             autoDrawEasing="ease-out"
-            data={[0,2,5,9,5,10,3,5,0,0,1,8,2,9,0]}
+            data={data}
             gradient={['yellow', 'orange', 'red']}
             radius={5.7}
             strokeWidth={0.75}
             strokeLinecap={'square'}
+            height={70}
         />
     </div>
     

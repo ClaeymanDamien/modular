@@ -10,13 +10,9 @@
     "react-bootstrap": "^1.0.0-beta.8",
     "react-circular-progressbar": "^2.0.0",
     "react-dom": "^16.8.6",
-    "react-headroom": "^2.2.8",
-    "react-progress-label": "^3.0.23",
-    "react-responsive-grid": "^0.3.4",
     "react-reveal": "^1.2.2",
-    "react-scripts": "3.0.1",
-    "react-trend": "^1.2.5",
-    "reactstrap": "^8.0.0"
+    "react-router-dom": "^5.0.0",
+    "react-trend": "^1.2.5"
   },
   "scripts": {
     "deploy": "npm run build&&gh-pages -d build",

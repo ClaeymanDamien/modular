@@ -1,9 +1,11 @@
 .label_trend{
     padding-top: 50px;
-    padding-bottom: 20px;
     background-image: url("./img/label_trend.png");
-    background-size: cover;
+    background-size: contain;
     background-repeat: no-repeat;
+    background-position: bottom;
+    height: 100%;
+    widows: 100%;
     
 }
 
