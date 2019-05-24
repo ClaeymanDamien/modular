@@ -29,11 +29,11 @@ import Zoom from 'react-reveal/Zoom';
     }
     
     loadData(){
-      //28 valeurs toutes les 5 minutes
+      //28 valeurs toutes les 5 minutes 16
       var data = [
         ["11h45","11h50","11h55","12h00","12h05","12h10","12h15","12h20","12h25","12h30","12h35","12h40","12h45","12h50","12h55",
         "13h00","13h05","13h10","13h15","13h20","13h25","13h30","13h35","13h40","13h45","13h50","13h55","14h00"],
-        [9,13,15,16,16,15,13,11,9,7,5,3,2,1,0,0,0,0,0,0,0,1,2,3,4,5,6,9]
+        [16,25,25,25,22,17,11,6,2,0,0,0,0,0,0,0,0,0,0,0,1,3,5,7,8,7,5,0]
       ]
       return data;
     }
@@ -119,9 +119,9 @@ import Zoom from 'react-reveal/Zoom';
         }
       } 
       //12h45 à la fin
-      for(var i=13; i<data[1].length; i++){
-        if(data[1][i] > 5){
-          second = data[0][i-1]
+      for(var j=13; j<data[1].length; j++){
+        if(data[1][j] > 5){
+          second = data[0][j-1]
           break
         }
       }   
@@ -153,8 +153,8 @@ import Zoom from 'react-reveal/Zoom';
         <div className="col-lg-10 col-12 offset-lg-1 d-flex justify-content-between mt-5 flex-column flex-md-row">
           <Zoom>
             <div className="col-lg bg-white p-2 p-md-3 p-lg-5 m-0 d-flex flex-column justify-content-center align-items-center">
-              <div className="pt-5 pt-lg-0">
-                <h2 className="display-4 text-center">Temps d'attente actuel</h2>
+              <div className="pt-5 pt-lg-2">
+                <h2 className="display-4 text-center p-5">Temps d'attente actuel</h2>
               </div>
               <div className="col-10 p-2 p-md-3 p-lg-4">
                 {open ? 
@@ -193,8 +193,8 @@ import Zoom from 'react-reveal/Zoom';
           
           <Zoom>
             <div className="col-lg bg-white p-lg-5 p-3 m-0 d-flex flex-column justify-content-center align-items-center">
-              <div className="pt-5 pt-lg-0">
-                <h2 className="display-4 text-center">Heure conseillé</h2>
+              <div className="pt-5 pt-lg-2">
+                <h2 className="display-4 text-center">Heures conseillées</h2>
               </div>
               <div className="col-10 p-lg-4 d-flex flex-column justify-content-center text-center align-items-center">
                   <div className="pb-4 pt-4">
